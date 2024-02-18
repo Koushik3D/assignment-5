@@ -197,7 +197,8 @@
                 </div>
             </div>
             <!-- Seat Management Section -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 border-2 rounded-3xl bg-white divide-x-2 divide-dashed p-8 m-10">
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-10 border-2 rounded-3xl bg-white lg:divide-x-2 lg:divide-dashed p-5 lg:p-8 m-5 lg:m-10">
                 <div>
                     <div class="divide-y-2 divide-dashed">
                         <h3 class="text-2xl text-secondary-color font-raleway font-semibold pb-5">Select Your Seat</h3>
@@ -284,45 +285,95 @@
                         </div>
                     </div>
                 </div>
-                <div class="px-10">
-                    <div class="divide-y-2 divide-dashed">
-                        <h3 class="text-2xl text-secondary-color font-raleway font-semibold pb-5">Select Your Seat</h3>
-                        <div class="overflow-x-auto">
-                            <table class="table">
-                              <!-- head -->
-                              <thead>
-                                <tr>
-                                  <th></th>
-                                  <th>Name</th>
-                                  <th>Job</th>
-                                  <th>Favorite Color</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <!-- row 1 -->
-                                <tr>
-                                  <th>1</th>
-                                  <td>Cy Ganderton</td>
-                                  <td>Quality Control Specialist</td>
-                                  <td>Blue</td>
-                                </tr>
-                                <!-- row 2 -->
-                                <tr class="hover">
-                                  <th>2</th>
-                                  <td>Hart Hagerty</td>
-                                  <td>Desktop Support Technician</td>
-                                  <td>Purple</td>
-                                </tr>
-                                <!-- row 3 -->
-                                <tr>
-                                  <th>3</th>
-                                  <td>Brice Swyre</td>
-                                  <td>Tax Accountant</td>
-                                  <td>Red</td>
-                                </tr>
-                              </tbody>
+                <!-- Seat Confirmation -->
+                <div class="lg:px-10">
+                    <div>
+                        <h3
+                            class="text-2xl text-secondary-color font-raleway font-semibold border-b-2 border-dashed pb-5">
+                            Select Your Seat</h3>
+                        <div class="overflow-x-auto border-2 rounded-xl bg-[#F7F8F8] p-5 my-5">
+                            <table class="table font-inter">
+                                <!-- head -->
+                                <thead class="text-lg text-secondary-color border-b-2 border-dashed border-[#03071233]">
+                                    <tr>
+                                        <th>Seat</th>
+                                        <th>Class</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- row 1 -->
+                                    <tr class="text-lg text-color-60 font-medium">
+                                        <td>C2</td>
+                                        <td>Economy</td>
+                                        <td>550</td>
+                                    </tr>
+                                    <!-- row 2 -->
+                                    <tr class="text-lg text-color-60">
+                                        <td>C3</td>
+                                        <td>Economy</td>
+                                        <td>550</td>
+                                    </tr>
+                                    <!-- row 3 -->
+                                    <tr class="text-lg text-secondary-color font-bold border-t-2 border-[#03071233]">
+                                        <td>Total Price</td>
+                                        <td></td>
+                                        <td>BDT 1100</td>
+                                    </tr>
+                                </tbody>
                             </table>
-                          </div>
+                            <div class="relative">
+                                <div>
+                                    <input type="text" placeholder="Have any coupon?"
+                                        class="input input-bordered text-lg h-16 w-full max-w-lg" />
+                                </div>
+                                <div class="absolute bottom-2 right-2">
+                                    <button
+                                        class="btn bg-primary-color text-lg text-white font-semibold px-5">Apply</button>
+                                </div>
+                            </div>
+                            <div class="flex justify-between text-lg font-bold mt-5">
+                                <div>
+                                    <p>Grand Total</p>
+                                </div>
+                                <div>
+                                    <p>BDT 1100</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb-5">
+                                <h3 class="text-lg text-secondary-color font-semibold pb-3">Passenger Name <span
+                                        class="text-red-600 font-bold">*</span></h3>
+                                <input type="text" placeholder="Enter your name"
+                                    class="input input-bordered text-lg text-color-40 h-14 w-full max-w-lg" />
+                            </div>
+                            <div class="mb-5">
+                                <h3 class="text-lg text-secondary-color font-semibold pb-3">Phone Number <span
+                                        class="text-red-600 font-bold">*</span></h3>
+                                <input type="text" placeholder="Enter your phone number"
+                                    class="input input-bordered text-lg text-color-40 h-14 w-full max-w-lg" />
+                            </div>
+                            <div class="mb-5">
+                                <h3 class="text-lg text-secondary-color font-semibold pb-3">Email ID</span></h3>
+                                <input type="email" placeholder="Enter your email id"
+                                    class="input input-bordered text-lg text-color-40 h-14 w-full max-w-lg" />
+                            </div>
+                            <div>
+                                <button
+                                    class="btn text-xl text-white hover:text-primary-color font-bold rounded-2xl h-16 w-full bg-primary-color">Next</button>
+                            </div>
+                            <div class="flex justify-between my-5">
+                                <div>
+                                    <a class="text-lg text-color-60 font-semibold underline" href="">Terms and
+                                        Conditions</a>
+                                </div>
+                                <div>
+                                    <a class="text-lg text-color-60 font-semibold underline" href="">Cancellation
+                                        Policy</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
