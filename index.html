@@ -131,7 +131,7 @@
             </div>
         </section>
         <!-- Ticket Purchase Section -->
-        <section class="border-t-2 border-primary-color rounded-t-[5rem] bg-[#F7F8F8] min-h-screen my-10">
+        <section class="border-t-2 border-primary-color rounded-t-[5rem] bg-[#F7F8F8] min-h-screen py-5 mt-10">
             <div class="text-center">
                 <h2 class="text-4xl text-secondary-color font-raleway font-bold my-5">K.D Express</h2>
                 <p class="text-lg text-color-60 font-inter px-5 lg:px-60">Yes, you can run unit tests and view the
@@ -291,37 +291,31 @@
                         <h3
                             class="text-2xl text-secondary-color font-raleway font-semibold border-b-2 border-dashed pb-5">
                             Select Your Seat</h3>
-                        <div class="overflow-x-auto border-2 rounded-xl bg-[#F7F8F8] p-5 my-5">
-                            <table class="table font-inter">
-                                <!-- head -->
-                                <thead class="text-lg text-secondary-color border-b-2 border-dashed border-[#03071233]">
-                                    <tr>
-                                        <th>Seat</th>
-                                        <th>Class</th>
-                                        <th>Price</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- row 1 -->
-                                    <tr class="text-lg text-color-60 font-medium">
-                                        <td>C2</td>
-                                        <td>Economy</td>
-                                        <td>550</td>
-                                    </tr>
-                                    <!-- row 2 -->
-                                    <tr class="text-lg text-color-60">
-                                        <td>C3</td>
-                                        <td>Economy</td>
-                                        <td>550</td>
-                                    </tr>
-                                    <!-- row 3 -->
-                                    <tr class="text-lg text-secondary-color font-bold border-t-2 border-[#03071233]">
-                                        <td>Total Price</td>
-                                        <td></td>
-                                        <td>BDT 1100</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="font-inter border-2 rounded-xl bg-[#F7F8F8] p-5 my-5">
+                            <div
+                                class="flex justify-between text-lg text-secondary-color font-bold border-b-2 border-dashed border-[#03071233] pb-3">
+                                <div class="flex gap-2">
+                                    <div>Seat</div>
+                                    <div class="border-2 px-2 rounded-full font-medium text-white bg-primary-color">0</div>
+                                </div>
+                                <div>Class</div>
+                                <div>Price</div>
+                            </div>
+                            <div class="flex justify-between text-lg text-color-60 font-medium pt-3 pb-2">
+                                <div>C2</div>
+                                <div>Economy</div>
+                                <div>550</div>
+                            </div>
+                            <div class="flex justify-between text-lg text-color-60 pb-3">
+                                <div>C3</div>
+                                <div>Economy</div>
+                                <div>550</div>
+                            </div>
+                            <div
+                                class="flex justify-between text-lg text-secondary-color font-bold border-t-2 border-[#03071233] py-5">
+                                <div>Total Price</div>
+                                <div>BDT 1100</div>
+                            </div>
                             <div class="relative">
                                 <div>
                                     <input type="text" placeholder="Have any coupon?"
@@ -382,9 +376,36 @@
     <!-- Main Section End -->
 
     <!--Footer Section Start  -->
-    <footer>
-
-    </footer>
+    <footer class="px-10 lg:px-32 py-10 lg:py-20 bg-secondary-color">
+        <div class="flex flex-col lg:flex-row gap-10 justify-between border-b border-dashed border-[#FFFFFF4D] py-5">
+            <div>
+                <h3 class="text-3xl text-white font-extrabold font-raleway pb-3">P-Ticket</h3>
+                <p class="text-[#FFFFFFCC] font-inter">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </div>
+            <div>
+                <h3 class="text-xl text-white font-semibold font-raleway mb-5">Download Our App</h3>
+                <div class="flex gap-3 border border-white rounded-lg p-2">
+                    <div>
+                        <img src="images/playstore.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-xs text-white font-semibold font-inter">GET IT ON</p>
+                        <p class="text-white font-semibold font-inter">GOOGLE PLAY</p>
+                    </div>
+                </div>               
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between gap-5 font-inter pt-5">
+            <div>
+                <p class="text-[#FFFFFFB3] font-inter">©2024 All Rights Reserved, P-Ticket Services Limited.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-3 text-white font-medium">
+                <div>Terms & Condition</div>
+                <div>Return & Refund Policy</div>
+                <div>Privacy Policy</div>
+            </div>
+        </div>
+      </footer>
     <!-- Footer Section End -->
 </body>
 
