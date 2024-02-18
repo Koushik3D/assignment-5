@@ -134,9 +134,11 @@
         <section class="border-t-2 border-primary-color rounded-t-[5rem] bg-[#F7F8F8] min-h-screen my-10">
             <div class="text-center">
                 <h2 class="text-4xl text-secondary-color font-raleway font-bold my-5">K.D Express</h2>
-                <p class="text-lg text-color-60 font-inter px-5 lg:px-60">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
+                <p class="text-lg text-color-60 font-inter px-5 lg:px-60">Yes, you can run unit tests and view the
+                    results directly within the app. The integrated testing features allow for a streamlined.</p>
             </div>
-            <div class="flex flex-col lg:flex-row justify-between gap-5 border-2 bg-white rounded-3xl divide-y-2 lg:divide-y-0 lg:divide-x-2 divide-dashed divide-primary-color p-8 m-10">
+            <div
+                class="flex flex-col lg:flex-row justify-between gap-5 border-2 bg-white rounded-3xl divide-y-2 lg:divide-y-0 lg:divide-x-2 divide-dashed divide-primary-color p-8 m-10">
                 <div>
                     <div class="flex flex-col lg:flex-row justify-between items-center gap-5">
                         <div class="flex gap-5">
@@ -149,7 +151,9 @@
                             </div>
                         </div>
                         <div>
-                            <button class="btn bg-[#1dd1001a]"><img src="images/seat-green.png" alt=""><span class="text-lg text-primary-color font-inter font-medium">40 Seats left</span></button>
+                            <button class="btn bg-[#1dd1001a]"><img src="images/seat-green.png" alt=""><span
+                                    class="text-lg text-primary-color font-inter font-medium">40 Seats
+                                    left</span></button>
                         </div>
                     </div>
                     <div class="lg:w-[50rem] border-2 rounded-3xl bg-[#F7F8F8] divide-y-2 divide-dashed p-5 mt-5">
@@ -184,37 +188,142 @@
                 </div>
                 <div class="flex flex-col justify-center items-center font-raleway px-10 lg:px-20">
                     <div class="mt-5 lg:mt-0"><img src="images/fare.png" alt=""></div>
-                    <div><h3 class="text-3xl text-secondary-color font-bold py-4">550 Taka</h3></div>
-                    <div><p class="text-2xl text-color-60 font-semibold">Per Seat</p></div>
+                    <div>
+                        <h3 class="text-3xl text-secondary-color font-bold py-4">550 Taka</h3>
+                    </div>
+                    <div>
+                        <p class="text-2xl text-color-60 font-semibold">Per Seat</p>
+                    </div>
                 </div>
             </div>
-            <div class="border-2 rounded-3xl bg-white p-8 m-10">
-                <div class="divide-y-2 divide-dashed">
-                    <h3 class="text-2xl text-secondary-color font-raleway font-semibold pb-5">Select Your Seat</h3>
-                    <div class="flex justify-between">
-                        <div class="flex gap-3 py-5">
-                            <div>
-                                <img src="images/seat-gray.png" alt="">
+            <!-- Seat Management Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 border-2 rounded-3xl bg-white divide-x-2 divide-dashed p-8 m-10">
+                <div>
+                    <div class="divide-y-2 divide-dashed">
+                        <h3 class="text-2xl text-secondary-color font-raleway font-semibold pb-5">Select Your Seat</h3>
+                        <div class="flex justify-between">
+                            <div class="flex gap-3 py-5">
+                                <div>
+                                    <img src="images/seat-gray.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-lg text-color-50 font-inter font-medium">Available</p>
+                                </div>
                             </div>
-                            <div>
-                                <p class="text-lg text-color-50 font-inter font-medium">Available</p>
+                            <div class="flex gap-3 py-5">
+                                <div>
+                                    <img src="images/seat-green-filled.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-lg text-primary-color font-inter font-medium">Available</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex gap-3 py-5">
-                            <div>
-                                <img src="images/seat-green-filled.png" alt="">
-                            </div>
-                            <div>
-                                <p class="text-lg text-primary-color font-inter font-medium">Available</p>
-                            </div>
+                        <div class="flex justify-end py-5">
+                            <div class=" w-28 h-16 border-2 rounded-xl bg-[#0307121A] px-10 py-4"><img
+                                    src="images/steering-wheel.png" alt=""></div>
                         </div>
                     </div>
-                    <div class="flex justify-end py-5">
-                        <div class=" w-28 h-16 border-2 rounded-xl bg-[#0307121A] px-10 py-4"><img src="images/steering-wheel.png" alt=""></div>
+                    <!-- Seat Section -->
+                    <div>
+                        <div class="flex flex-col lg:flex-row justify-center items-center gap-20">
+                            <div class="grid grid-cols-3 gap-5 text-lg text-color-50 font-medium">
+                                <div class="p-2">A</div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">A1</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">A2</button></div>
+                                <div class="p-2">B</div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">B1</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">B2</button></div>
+                                <div class="p-2">C</div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">C1</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">C2</button></div>
+                                <div class="p-2">D</div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">D1</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">D2</button></div>
+                                <div class="p-2">E</div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">E1</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">E2</button></div>
+                                <div class="p-2">F</div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">F1</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">F2</button></div>
+                                <div class="p-2">G</div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">G1</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">G2</button></div>
+                                <div class="p-2">H</div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">H1</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">H2</button></div>
+                                <div class="p-2">I</div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">I1</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">I2</button></div>
+                                <div class="p-2">J</div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">J1</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">J2</button></div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-5">
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">A3</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">A4</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">B3</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">B4</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">C3</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">C4</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">D3</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">D4</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">E3</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">E4</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">F3</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">F4</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">G3</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">G4</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">H3</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">H4</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">I3</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">I4</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">J3</button></div>
+                                <div><button class="btn text-lg text-color-50 font-medium px-8">J4</button></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-
+                <div class="px-10">
+                    <div class="divide-y-2 divide-dashed">
+                        <h3 class="text-2xl text-secondary-color font-raleway font-semibold pb-5">Select Your Seat</h3>
+                        <div class="overflow-x-auto">
+                            <table class="table">
+                              <!-- head -->
+                              <thead>
+                                <tr>
+                                  <th></th>
+                                  <th>Name</th>
+                                  <th>Job</th>
+                                  <th>Favorite Color</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- row 1 -->
+                                <tr>
+                                  <th>1</th>
+                                  <td>Cy Ganderton</td>
+                                  <td>Quality Control Specialist</td>
+                                  <td>Blue</td>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr class="hover">
+                                  <th>2</th>
+                                  <td>Hart Hagerty</td>
+                                  <td>Desktop Support Technician</td>
+                                  <td>Purple</td>
+                                </tr>
+                                <!-- row 3 -->
+                                <tr>
+                                  <th>3</th>
+                                  <td>Brice Swyre</td>
+                                  <td>Tax Accountant</td>
+                                  <td>Red</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                    </div>
                 </div>
             </div>
         </section>
