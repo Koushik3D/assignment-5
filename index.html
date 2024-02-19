@@ -52,7 +52,7 @@
         <div
             class="bg-[url(images/banner.png)] min-h-80 lg:min-h-screen bg-no-repeat bg-contain w-full text-center my-5">
             <h3 class="font-raleway text-3xl lg:text-6xl font-extrabold pt-5 lg:pt-16"><span
-                    class="text-white">End-to-End Travel with</span><br><span class="text-primary-color">K
+                    class="text-white">End-to-End Travel with</span><br><span class="text-primary-color">K.D
                     Express</span></h3>
             <p class="font-inter text-lg text-white my-5 lg:my-10 lg:mx-60">Yes, you can run unit tests and view the
                 results
@@ -99,35 +99,42 @@
     <!-- Main Section Start -->
     <main>
         <!-- Offer Section -->
-        <section class="mx-5">
+        <section class="mx-5 lg:mx-20">
             <h2 class="text-4xl text-center text-secondary-color font-raleway font-bold py-5 lg:py-10">Best offers for
                 you</h2>
             <div class="flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-10">
-                <div class="flex justify-between border rounded-2xl bg-[#FFBF0F] divide-x-2 divide-dashed">
-                    <div class="font-inter p-6 lg:p-12">
+                <div class="flex justify-between rounded-2xl bg-[#FFBF0F]">
+                    <div class="font-inter p-3 lg:p-10">
                         <h3 class="text text-4xl text-color-80 font-extrabold">15% OFF</h3>
                         <p class="text-xl text-color-80 font-semibold">on your next purchase</p>
                         <p class="text-lg text-color-50 font-medium">use by January 2024</p>
                     </div>
-                    <div class="font-raleway px-6 py-8 lg:px-12 lg:py-16">
+                    <div>
+                        <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="font-raleway p-3 lg:px-10 lg:py-16">
                         <h3 class="text-3xl text-secondary-color font-bold">NEW15</h3>
                         <p class="text-xl text-color-40 font-medium">Coupon Code</p>
                     </div>
+                    
                 </div>
-                <div class="flex justify-between border rounded-2xl bg-[#F78C9C] divide-x-2 divide-dashed">
-                    <div class="font-inter p-6 lg:p-12">
+                <div class="flex justify-between rounded-2xl bg-[#F78C9C]">
+                    <div class="font-inter p-3 lg:p-10">
                         <h3 class="text text-4xl text-color-80 font-extrabold">20% OFF</h3>
                         <p class="text-xl text-color-80 font-semibold">on your next purchase</p>
                         <p class="text-lg text-color-50 font-medium">use by January 2024</p>
                     </div>
-                    <div class="font-raleway px-6 py-8 lg:px-12 lg:py-16">
+                    <div>
+                        <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="font-raleway px-1 py-3 lg:px-10 lg:py-16">
                         <h3 class="text-3xl text-secondary-color font-bold">Couple 20</h3>
                         <p class="text-xl text-color-40 font-medium">Coupon Code</p>
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center items-center">
-                <button class="btn text-xl text-primary-color font-raleway font-bold my-5">See All Offers</button>
+            <div class="flex justify-center items-center pt-10">
+                <button class="btn text-xl text-primary-color font-raleway font-bold bg-white border-primary-color my-5">See All Offers</button>
             </div>
         </section>
         <!-- Ticket Purchase Section -->
@@ -138,9 +145,9 @@
                     results directly within the app. The integrated testing features allow for a streamlined.</p>
             </div>
             <div
-                class="flex flex-col lg:flex-row justify-between gap-5 border-2 bg-white rounded-3xl divide-y-2 lg:divide-y-0 lg:divide-x-2 divide-dashed divide-primary-color p-8 m-10">
+                class="flex flex-col lg:flex-row justify-between gap-5 bg-white rounded-3xl divide-y-2 lg:divide-y-0 divide-primary-color px-5 lg:px-10 m-5 lg:mx-20 lg:my-10">
                 <div>
-                    <div class="flex flex-col lg:flex-row justify-between items-center gap-5">
+                    <div class="flex flex-col lg:flex-row justify-between items-center gap-5 pt-5 lg:pt-12">
                         <div class="flex gap-5">
                             <div>
                                 <img src="images/bus-logo.png" alt="">
@@ -186,7 +193,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col justify-center items-center font-raleway px-10 lg:px-20">
+                <div class="invisible lg:visible">
+                    <img src="images/info-devider.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center font-raleway px-5">
                     <div class="mt-5 lg:mt-0"><img src="images/fare.png" alt=""></div>
                     <div>
                         <h3 class="text-3xl text-secondary-color font-bold py-4">550 Taka</h3>
@@ -194,11 +204,11 @@
                     <div>
                         <p class="text-2xl text-color-60 font-semibold">Per Seat</p>
                     </div>
-                </div>
+                </div>          
             </div>
             <!-- Seat Management Section -->
             <div
-                class="grid grid-cols-1 lg:grid-cols-2 gap-10 border-2 rounded-3xl bg-white lg:divide-x-2 lg:divide-dashed p-5 lg:p-8 m-5 lg:m-10">
+                class="grid grid-cols-1 lg:grid-cols-2 gap-10 border-2 rounded-3xl bg-white lg:divide-x-2 lg:divide-dashed p-5 lg:p-8 m-5 lg:m-20">
                 <div>
                     <div class="divide-y-2 divide-dashed">
                         <h3 class="text-2xl text-secondary-color font-raleway font-semibold pb-5">Select Your Seat</h3>
@@ -316,6 +326,11 @@
                                 <div>Total Price</div>
                                 <div>BDT 1100</div>
                             </div>
+                            <div
+                                class="flex justify-between text-lg text-secondary-color font-bold pb-5">
+                                <div>Discount</div>
+                                <div>BDT 0</div>
+                            </div>
                             <div class="relative">
                                 <div>
                                     <input type="text" placeholder="Have any coupon?"
@@ -327,12 +342,8 @@
                                 </div>
                             </div>
                             <div class="flex justify-between text-lg font-bold mt-5">
-                                <div>
-                                    <p>Grand Total</p>
-                                </div>
-                                <div>
-                                    <p>BDT 1100</p>
-                                </div>
+                                <div>Grand Total</div>
+                                <div>BDT 1100</div>
                             </div>
                         </div>
                         <div>
