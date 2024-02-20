@@ -29,6 +29,7 @@ for(const seatNumber of seatNumbers) {
         const div3 = document.createElement('div');
         
         div.classList.add('flex', 'justify-between', 'p-2');
+        
         div1.innerText = selectedSeatNumber;
         div2.innerText = 'Economy';
         div3.innerText = 550;
@@ -36,8 +37,28 @@ for(const seatNumber of seatNumbers) {
         div.appendChild(div1);
         div.appendChild(div2);
         div.appendChild(div3);
-
         seatSelected.appendChild(div);
+
+        setTotalPriceById('total-price', 550);
+
+        const totalCost = document.getElementById('total-price').innerText;
+        const convertedTotalCost = parseInt(totalCost);
+        const discountedPrice = document.getElementById('discounted-price').innerText;
+        const convertedDiscountedPrice = parseInt(discountedPrice);
+    
+        const grandTotal = convertedTotalCost - convertedDiscountedPrice;
+        setInnerTextById('grand-total', grandTotal);
+        
+        const applyButton = document.getElementById('apply-btn');
+        const seatBooking = document.getElementById('seat-booking').innerText;
+        const convertedSeatBooking = parseInt(seatBooking);
+        if (convertedSeatBooking === 4) {
+            applyButton.removeAttribute('disabled');
+            
+        }
+        else {
+            // alert('Maximum Number of Seats Selected')
+        }
     })
 }
 
@@ -47,7 +68,7 @@ const nextButton = document.getElementById('next-btn');
 
 function successPage() {
     if (passengerName === 'string' && phoneNumber === 'number') {
-        // nextButton.removeAttribute(disabled);
-        nextButton.disabled = false;
+        // nextButton.removeAttribute('disabled');
+        // nextButton.disabled = false;
     }
 }
