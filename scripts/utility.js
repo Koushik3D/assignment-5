@@ -23,32 +23,52 @@ function setInnerTextById(elementId, value) {
     element.innerText = value;
 }
 
+function setConvertedValueById(elementId) {
+    const value = document.getElementById(elementId).innerText;
+    const convertedValue = parseInt(value);
+    return convertedValue;
+}
+
 function setTotalPriceById(elementId, value) {
-    const totalPrice = document.getElementById(elementId).innerText;
-    const convertedTotalPrice = parseInt(totalPrice);
-    const sum = convertedTotalPrice + value;
+    const totalPrice = setConvertedValueById(elementId);
+    const sum = totalPrice + value;
     setInnerTextById(elementId, sum);
 }
 
-function setDiscountedPrice() {
+function setDiscountedPrice(status) {
     const coupon = document.getElementById('coupon-code');
     const couponCode = coupon.value;
+    const couponBox = document.getElementById('coupon-box');
+    const applyButton = document.getElementById('apply-btn');
+    const totalPrice = setConvertedValueById("total-price");
 
-    if (couponCode === 'NEW15') {
-        const totalCost = document.getElementById('total-price').innerText;
-        const convertedTotalCost = parseInt(totalCost);
-        const discountedPrice = convertedTotalCost * 15 / 100;
-        setInnerTextById('discounted-price', discountedPrice);
-    }
-
-    else if (couponCode === 'Couple 20') {
-        const totalCost = document.getElementById('total-price').innerText;
-        const convertedTotalCost = parseInt(totalCost);
-        const discountedPrice = convertedTotalCost * 20 / 100;
-        setInnerTextById('discounted-price', discountedPrice);
+    if (status === undefined) {
+        setInnerTextById('grand-total', totalPrice);
     }
 
     else {
-        alert('Invalid Coupon Code')
+        if (couponCode === 'NEW15') {
+            const totalCost = document.getElementById('total-price').innerText;
+            const convertedTotalCost = parseInt(totalCost);
+            const discountedPrice = convertedTotalCost * 15 / 100;
+            setInnerTextById('discounted-price', discountedPrice);
+            const grandTotal = convertedTotalCost - discountedPrice;
+            setInnerTextById('grand-total', grandTotal);
+            applyButton.disabled = true;
+        }
+
+        else if (couponCode === 'Couple 20') {
+            const totalCost = document.getElementById('total-price').innerText;
+            const convertedTotalCost = parseInt(totalCost);
+            const discountedPrice = convertedTotalCost * 20 / 100;
+            setInnerTextById('discounted-price', discountedPrice);
+            const grandTotal = convertedTotalCost - discountedPrice;
+            setInnerTextById('grand-total', grandTotal);
+            applyButton.disabled = true;
+        }
+
+        else {
+            couponBox.classList.add('hidden');
+        }
     }
 }
