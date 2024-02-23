@@ -62,34 +62,8 @@ for (const seatNumber of seatNumbers) {
             applyButton.removeAttribute('disabled');
             
         }
+        
+        successPage();
     }
 }
-
-
-
-        
-// function successPage() {
-    // seatReserved === 1 && convertedPhoneNumber.toString().length > 0
-    // const pname = passengerName.value;
-    // console.log(pname);
-    // typeof passengerName === 'string' && 
-    // && convertedPhoneNumber.toString().length > 0
-// }
-
-
-
-       
-        
-
-        
-
-        const phoneNumber = document.getElementById('phone-number');
-        const checkPhoneNumber = phoneNumber.value;
-        const convertedPhoneNumber = parseInt(checkPhoneNumber);
-        const nextButton = document.getElementById('next-btn');
-        if (seatReserved === 1) {
-            nextButton.removeAttribute('disabled');
-        }
-        // console.log(convertedPhoneNumber.toString().length);
-        // console.log(typeof convertedPhoneNumber);
         

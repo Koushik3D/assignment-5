@@ -72,3 +72,22 @@ function setDiscountedPrice(status) {
         }
     }
 }
+
+function successPage() {
+    const phoneNumber = document.getElementById('phone-number');
+    const nextButton = document.getElementById('next-btn');
+    const seatBooking = setConvertedValueById('seat-booking');
+
+    phoneNumber.addEventListener('keyup', function (event) {
+        const input = event.target.value;
+        const convertedInput = parseInt(input);
+        if (seatBooking >= 1 && convertedInput.toString().length === 10) {
+            nextButton.removeAttribute('disabled');
+        }
+    })
+}
+
+
+
+
+
