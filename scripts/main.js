@@ -26,17 +26,14 @@ for (const seatNumber of seatNumbers) {
             seatAlert.removeAttribute('hidden');
             return;           
         }
-
-        
+               
         setInnerTextById('seat-count', totalSeat);
         seatReserved = seatReserved + 1;
         setInnerTextById('seat-booking', seatReserved);
         seatNumber.disabled = true;
         seatNumber.style.backgroundColor = '#1DD100';
         seatNumber.style.color = 'white';
-
-        
-
+       
         const selectedSeatNumber = event.target.parentNode.childNodes[0].innerText;
         const seatSelected = document.getElementById('seat-selected');
         const div = document.createElement('div');
