@@ -68,6 +68,8 @@ function setDiscountedPrice(status) {
         }
 
         else {
+            const couponAlert = document.getElementById('coupon-alert');
+            couponAlert.removeAttribute('hidden');         
             couponBox.classList.add('hidden');
         }
     }

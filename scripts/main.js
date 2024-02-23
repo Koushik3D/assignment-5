@@ -22,7 +22,8 @@ for (const seatNumber of seatNumbers) {
         const seatBooking = setConvertedValueById('seat-booking');
 
         if (seatBooking + 1 > 4) {
-            alert('You can reserved maximum 4 seats');
+            const seatAlert = document.getElementById('seat-alert');
+            seatAlert.removeAttribute('hidden');
             return;           
         }
 
